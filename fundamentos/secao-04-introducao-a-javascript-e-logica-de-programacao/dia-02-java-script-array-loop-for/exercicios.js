@@ -46,17 +46,21 @@ for (let index = 0; index < numeros.length; index += 1) {
 let maiorNumero = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers[index] > maiorNumero) {
-    maiorNumero = numbers[index];
+  for (let indexComparador = 0; indexComparador < numbers.length; indexComparador += 1) {
+    if (numbers[index] > numbers[indexComparador] && numbers[index] > maiorNumero) {
+      maiorNumero = numbers[index];
+    }
   }
 }
 console.log(maiorNumero);
 
-let menorNumero = 564848478464156565665566565566565656;
+let menorNumero = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers[index] < menorNumero) {
-    menorNumero = numbers[index];
+  for (let indexComparador = 0; indexComparador < numbers.length; indexComparador += 1) {
+    if (numbers[index] < numbers[indexComparador] && numbers[index] < menorNumero) {
+      menorNumero = numbers[index];
+    }
   }
 }
 console.log(menorNumero);
