@@ -15,3 +15,11 @@
       document.getElementById(element).innerText = 'Estarei trabalhando e comprando todas as coisas que eu quiser!';
     }
     changeText('main-text');
+
+    function changeColor(element, color) {
+      let elementClass = document.getElementsByClassName(element);
+      for (let i = 0; i < elementClass.length; i += 1) {
+        document.getElementsByClassName(element)[i].style.backgroundColor = color;
+      }
+    }
+    changeColor('main-content', 'rgb(76,164,109)');
