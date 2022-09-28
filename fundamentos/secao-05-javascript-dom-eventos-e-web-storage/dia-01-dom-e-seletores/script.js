@@ -11,15 +11,17 @@
       6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
       */
 
-    function changeText(element) {
+    function changeTextID(element) {
       document.getElementById(element).innerText = 'Estarei trabalhando e comprando todas as coisas que eu quiser!';
     }
-    changeText('main-text');
+    changeTextID('main-text');
 
-    function changeColor(element, color) {
+    function changeColorClass(element, color) {
       let elementClass = document.getElementsByClassName(element);
       for (let i = 0; i < elementClass.length; i += 1) {
         document.getElementsByClassName(element)[i].style.backgroundColor = color;
       }
     }
-    changeColor('main-content', 'rgb(76,164,109)');
+    changeColorClass('main-content', 'rgb(76,164,109)');
+
+    changeColorClass('center-content', 'white');
