@@ -12,5 +12,6 @@
       */
 
     function changeText(element) {
-      
+      document.getElementById(element).innerText = 'Estarei trabalhando e comprando todas as coisas que eu quiser!';
     }
+    changeText('main-text');
