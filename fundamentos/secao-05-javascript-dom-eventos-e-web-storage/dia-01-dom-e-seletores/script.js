@@ -38,3 +38,11 @@
       document.getElementById(element).style.textTransform = 'uppercase';
     }
     upperCaseTextID('title-paragraph');
+
+    function consoleLogParagraphs() {
+      let arrayP = document.getElementsByTagName('p')
+      for (let i = 0; i < arrayP.length; i += 1) {
+        console.log(document.getElementsByTagName('p')[i].innerText);
+      }
+    }
+    consoleLogParagraphs();
