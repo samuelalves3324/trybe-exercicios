@@ -32,4 +32,9 @@
         document.getElementsByClassName(element)[i].innerText = text;
       }
     }
-    changeTextClass('title', 'Exercício - Java Script')
+    changeTextClass('title', 'Exercício - Java Script');
+
+    function upperCaseTextID(element) {
+      document.getElementById(element).style.textTransform = 'uppercase';
+    }
+    upperCaseTextID('title-paragraph');
