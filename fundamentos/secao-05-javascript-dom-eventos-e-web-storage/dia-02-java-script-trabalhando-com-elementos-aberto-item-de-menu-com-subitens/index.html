@@ -57,39 +57,39 @@
   </head>
   <body>
     <script>
-      let bodyTag = document.getElementsByTagName('body')[0];
-      let heroTitle = document.createElement('h1')
+      const bodyTag = document.getElementsByTagName('body')[0];
+      const heroTitle = document.createElement('h1')
       heroTitle.innerHTML = 'Exercício - JavaScript DOM';
       bodyTag.appendChild(heroTitle); 
 
-      let mainContent = document.createElement('main');
+      const mainContent = document.createElement('main');
       mainContent.className = 'main-content';
       bodyTag.appendChild(mainContent);
 
-      let centerContent = document.createElement('section');
+      const centerContent = document.createElement('section');
       centerContent.className = 'center-content';
       mainContent.appendChild(centerContent);
 
-      let pChildSection = document.createElement('p');
+      const pChildSection = document.createElement('p');
       pChildSection.innerHTML = 'Lorem ipsum dolor sit amet. Aut cupiditate accusantium non quaerat doloremque et deleniti fuga sit mollitia omnis ea maxime omnis. Eum voluptatem dolorem in sapiente iusto non voluptatem praesentium et itaque quisquam qui itaque officiis eos iure quidem At neque tempore.'
       centerContent.appendChild(pChildSection);
 
-      let leftContent = document.createElement('section');
+      const leftContent = document.createElement('section');
       leftContent.className = 'left-content';
       mainContent.appendChild(leftContent);
 
-      let rightContent = document.createElement('section');
+      const rightContent = document.createElement('section');
       rightContent.className = 'right-content';
       mainContent.appendChild(rightContent);
 
-      let smallImage = document.createElement('img');
+      const smallImage = document.createElement('img');
       smallImage.className = 'small-image';
       smallImage.src = 'https://picsum.photos/200';
       leftContent.appendChild(smallImage);
 
-      let unorderedList = document.createElement('ul');
+      const unorderedList = document.createElement('ul');
       rightContent.appendChild(unorderedList);
-      let objectNumbersWritten = {
+      const objectNumbersWritten = {
         1 : 'um',
         2 : 'dois',
         3 : 'três',
