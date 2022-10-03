@@ -165,3 +165,20 @@ buttonAdd.addEventListener('click', function(event) {
     alert('erro');
   }
 })
+
+messageBox.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    if (messageBox.value.length > 0) {
+      let commitmentList = document.createElement('div');
+      document.getElementsByTagName('body')[0].appendChild(commitmentList);
+      commitmentList.innerHTML = messageBox.value;
+      commitmentList.style.width = '100%';
+      commitmentList.style.textAlign = 'center';
+      commitmentList.style.color = '#666';
+      commitmentList.style.fontSize = '20px';
+      
+    } else {
+      alert('erro');
+    }
+  }
+})
