@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,57 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <header>
+    <h1>TrybeTrip</h1>
+    <p>Preencha este formulário para concorrer a viagem.</p>
+  </header>
+  <form action="" method="get">
+    <section>
+      <label for="name">Nome Completo:</label>
+      <input type="text" id="name" min="10" max="40" name="name">
+    </section>
+    <section>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" min="10" max="50">
+    </section>
+    <section>
+      <label for="">Destino Preferido:</label>
+
+      <input type="radio" name="destiny" id="destiny1" value="city">
+      <label for="destiny1">Cidade</label>
+
+      <input type="radio" name="destiny" id="destiny2" value="countryside">
+      <label for="destiny2">Campo</label>
+
+      <input type="radio" name="destiny" id="destiny3" value="beach">
+      <label for="destiny3">Praia</label>
+
+      <input type="radio" name="destiny" id="destiny4" value="mountains">
+      <label for="destiny4">Montanhas</label>
+      
+    </section>
+    <section>
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+      <textarea name="report" id="report" cols="30" rows="10" maxlength="500"></textarea>
+    </section>
+    <section>
+      <label for="date">Escolha a melhor data para você:</label>
+      <input type="date" name="date" id="date">
+    </section>
+    <section>
+      <input type="checkbox" name="oferta" id="offer">
+      <label for="offer">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+    </section>
+    <section>
+      <input type="checkbox" name="termos" id="terms" required>
+      <label for="terms">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </section>
+    <section>
+      <button type="submit" id="submit-button">Enviar</button>
+      <button type="reset">Apagar</button>
+    </section>
+
+    <script src="script.js"></script>
+  </form>
 </body>
 </html>
