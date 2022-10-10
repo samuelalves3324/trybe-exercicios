@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="main">
+    <header class="main-title">
+      <h1>TrybeTrip</h1>
+      <p>Preencha este formulário para concorrer a viagem.</p>
+    </header>
+    <form action="" method="get">
+      <section class="container-sm">
+        <label for="name" class="form-label">Nome Completo:</label>
+        <input type="text" id="name" min="10" max="40" name="name" class="form-control">
+      </section>
+      <section class="container-sm">
+        <label for="email" class="form-label">E-mail:</label>
+        <input type="email" name="email" id="email" min="10" max="50" class="form-control">
+      </section>
+      <section class="container-sm">
+        <label for="" class="form-label">Destino Preferido:</label>
+
+        <input type="radio" name="destiny" id="destiny1" value="city" class="form-check-input">
+        <label for="destiny1" class="form-check-label">Cidade</label>
+
+        <input type="radio" name="destiny" id="destiny2" value="countryside" class="form-check-input"> 
+        <label for="destiny2" class="form-check-label">Campo</label>
+
+        <input type="radio" name="destiny" id="destiny3" value="beach" class="form-check-input">
+        <label for="destiny3" class="form-check-label">Praia</label>
+
+        <input type="radio" name="destiny" id="destiny4" value="mountains" class="form-check-input">
+        <label for="destiny4" class="form-check-label">Montanhas</label>
+        
+      </section>
+      <section class="container-sm">
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="report" id="report" cols="30" rows="10" maxlength="500" class="form-control"></textarea>
+      </section>
+      <section class="container-sm">
+        <label for="date" class="form-label">Escolha a melhor data para você:</label>
+        <input type="text" id="datepicker" name="date" autocomplete="off">
+      </section>
+      <section class="container-sm">
+        <input type="checkbox" name="oferta" id="offer" class="form-check-input">
+        <label for="offer" class="form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </section>
+      <section class="container-sm" >
+        <input type="checkbox" name="termos" id="terms" required class="form-check-input">
+        <label for="terms" cclass="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </section>
+      <section class="container-sm">
+        <button type="submit" id="submit-button" class="btn btn-success">Enviar</button>
+        <button type="reset" class="btn btn-warning">Apagar</button>
+      </section>
+
+      <script src="script.js"></script>
+      <script src="pikaday.js"></script>
+    </form>
+  </main>
+</body>
+</html>
