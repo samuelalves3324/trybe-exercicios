@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+form {
+  background-color: gray;
+  padding: 50px;
+}
+
+input {
+  border: solid 1px black;
+  border-radius: 3px;
+  height: 25px;
+}
+
+select {
+  height: 30px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+button {
+  height: 30px;
+}
+
+p {
+  margin-top: 5px;
+  background-color: rgba(205,205,205,0.3);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
